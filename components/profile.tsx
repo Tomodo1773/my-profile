@@ -1,6 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Github, Instagram, Linkedin, Facebook, Twitter } from "lucide-react";
+import Image from "next/image";
 
 export default function Profile() {
 	return (
@@ -10,7 +10,7 @@ export default function Profile() {
 					<div className="flex flex-col items-center space-y-4">
 						{/* プロフィール画像 */}
 						<div className="w-32 h-32 rounded-full overflow-hidden border-4 border-white shadow-lg">
-							<img src="/images/profile.png" alt="Tomodo" className="w-full h-full object-cover" />
+							<Image src="/images/profile.png" alt="Tomodo" width={128} height={128} className="w-full h-full object-cover" />
 						</div>
 
 						{/* 名前 */}
@@ -28,7 +28,7 @@ export default function Profile() {
 						<div className="flex space-x-4 mt-4">
 							<Button variant="ghost" size="icon" asChild>
 								<a href="https://x.com/Tomodo_ysys" target="_blank" rel="noopener noreferrer" aria-label="X">
-									<img src="/images/x.png" alt="x" className="h-5 w-5 object-contain" />
+									<Image src="/images/x.png" alt="x" width={20} height={20} className="h-5 w-5 object-contain" />
 								</a>
 							</Button>
 							<Button variant="ghost" size="icon" asChild>
@@ -43,7 +43,7 @@ export default function Profile() {
 							</Button>
 							<Button variant="ghost" size="icon" asChild>
 								<a href="https://github.com/Tomodo1773" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-									<img src="/images/github.png" alt="GitHub" className="h-5 w-5 object-contain" />
+									<Image src="/images/github.png" alt="GitHub" width={20} height={20} className="h-5 w-5 object-contain" />
 								</a>
 							</Button>
 						</div>
