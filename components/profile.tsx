@@ -33,12 +33,12 @@ export default function Profile() {
 							</Button>
 							<Button variant="ghost" size="icon" asChild>
 								<a href="https://zenn.dev/tomodo_ysys" target="_blank" rel="noopener noreferrer" aria-label="Zenn">
-									<object data="/images/zenn.svg" type="image/svg+xml" className="h-5 w-5 object-contain" aria-label="Zenn"></object>
+									<Image src="/images/zenn.svg" alt="Zenn" width={20} height={20} />
 								</a>
 							</Button>
 							<Button variant="ghost" size="icon" asChild>
 								<a href="https://speakerdeck.com/tomodo_ysys" target="_blank" rel="noopener noreferrer" aria-label="Speaker_deck">
-									<object data="/images/speaker_deck.svg" type="image/svg+xml" className="h-5 w-5 object-contain" aria-label="Speaker_deck"></object>
+									<Image src="/images/speaker_deck.svg" alt="Speaker deck" width={20} height={20} />
 								</a>
 							</Button>
 							<Button variant="ghost" size="icon" asChild>
