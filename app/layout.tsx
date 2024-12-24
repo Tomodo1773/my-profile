@@ -14,8 +14,31 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Tomodo's Profile",
-  description: "Welcome to Tomodo's personal profile page",
+	title: "Tomodo's Profile",
+	description: "Welcome to Tomodo's personal profile page",
+	openGraph: {
+		title: "Tomodo's Profile",
+		description: "Welcome to Tomodo's personal profile page",
+		url: "https://profile.tomodo.net",
+		siteName: "Tomodo's Profile",
+		images: [
+			{
+				url: "https://profile.tomodo.net/images/ogp.png", // 絶対URLを使用
+				width: 1200,
+				height: 630,
+				alt: "Tomodo's Profile",
+			},
+		],
+		locale: "ja_JP",
+		type: "website",
+	},
+	twitter: {  // TwitterはXになりましたが、メタタグは変更なし
+		card: "summary_large_image",
+		title: "Tomodo's Profile",
+		description: "Welcome to Tomodo's personal profile page",
+		creator: "@Tomodo_ysys",
+		images: ["https://profile.tomodo.net/images/ogp.png"], // 絶対URLを使用
+	},
 };
 
 export default function RootLayout({
