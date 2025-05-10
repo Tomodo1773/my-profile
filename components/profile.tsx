@@ -21,7 +21,7 @@ export default function Profile() {
 
 						{/* 自己紹介 */}
 						<p className="text-gray-600 text-center max-w-sm">
-							SIerの生成AI活用推進。社内向けにAOAIのAPI公開してLT大会など開催。Azure,Python,Langchain,Streamlit,Line。LLMアプリ開発者目指してキャラクターbotで特訓中。技術ブログ、コミュニティ参加。アニメ好き。
+							LLMアプリを作りたい人。SIerの生成AI活用推進。社内でAOAIのAPI公開とかLT大会とか。Azure,Python,LangGraph,Next.js。キャラクターbotが好き。アニメ好き。
 						</p>
 
 						{/* ソーシャルリンク */}
