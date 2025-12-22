@@ -17,11 +17,11 @@ export default function Profile() {
 						<h1 className="text-2xl font-bold text-gray-900">ともど</h1>
 
 						{/* 職業 */}
-						<div className="text-gray-600 font-medium">生成AI活用推進</div>
+						<div className="text-gray-600 font-medium">AIエージェントデベロッパー / 生成AI活用推進</div>
 
 						{/* 自己紹介 */}
 						<p className="text-gray-600 text-center max-w-sm">
-							LLMアプリを作りたい人。SIerの生成AI活用推進。社内でAOAIのAPI公開とかLT大会とか。Azure,Python,LangGraph,Next.js。キャラクターbotが好き。アニメ好き。
+							AIエージェントデベロッパー。SIerの生成AI活用推進。社内でAOAIのAPI公開とかLT大会とか。Azure,Python,LangGraph。キャラクターbotが好き。アニメ好き。
 						</p>
 
 						{/* ソーシャルリンク */}
