@@ -1,0 +1,57 @@
+version: 2
+updates:
+  # npm依存関係の更新設定
+  - package-ecosystem: "npm"
+    directory: "/"
+    open-pull-requests-limit: 2
+    schedule:
+      interval: weekly
+    cooldown:
+      default-days: 7
+      semver-major-days: 14
+      semver-minor-days: 7
+      semver-patch-days: 3
+    groups:
+      # version-updatesを1つのPRにグループ化
+      npm-version:
+        applies-to: version-updates
+        patterns:
+          - "*"
+      # security-updatesを1つのPRにグループ化
+      npm-security:
+        applies-to: security-updates
+        patterns:
+          - "*"
+    labels:
+      - "dependencies"
+      - "npm"
+    commit-message:
+      prefix: "deps(npm)"
+      prefix-development: "deps(npm)"
+
+  # GitHub Actionsの更新設定
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+    cooldown:
+      default-days: 7
+    groups:
+      # version-updatesを1つのPRにグループ化
+      github-actions-version:
+        applies-to: version-updates
+        patterns:
+          - "*"
+      # security-updatesを1つのPRにグループ化
+      github-actions-security:
+        applies-to: security-updates
+        patterns:
+          - "*"
+    open-pull-requests-limit: 10
+    labels:
+      - "dependencies"
+      - "github-actions"
+    commit-message:
+      prefix: "deps(github-actions)"
+      prefix-development: "deps(github-actions)"
