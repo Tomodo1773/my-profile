@@ -14,19 +14,19 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-	title: "Tomodo's Profile",
-	description: "Welcome to Tomodo's personal profile page",
+	title: "ともどのプロフィール",
+	description: "ともどのSNS・技術発信リンク集",
 	openGraph: {
-		title: "Tomodo's Profile",
-		description: "Welcome to Tomodo's personal profile page",
+		title: "ともどのプロフィール",
+		description: "ともどのSNS・技術発信リンク集",
 		url: "https://profile.tomodo.net",
-		siteName: "Tomodo's Profile",
+		siteName: "ともどのプロフィール",
 		images: [
 			{
 				url: "https://profile.tomodo.net/images/ogp.png", // 絶対URLを使用
 				width: 1200,
 				height: 630,
-				alt: "Tomodo's Profile",
+				alt: "ともどのプロフィール",
 			},
 		],
 		locale: "ja_JP",
@@ -34,8 +34,8 @@ export const metadata: Metadata = {
 	},
 	twitter: {  // TwitterはXになりましたが、メタタグは変更なし
 		card: "summary_large_image",
-		title: "Tomodo's Profile",
-		description: "Welcome to Tomodo's personal profile page",
+		title: "ともどのプロフィール",
+		description: "ともどのSNS・技術発信リンク集",
 		creator: "@Tomodo_ysys",
 		images: ["https://profile.tomodo.net/images/ogp.png"], // 絶対URLを使用
 	},
@@ -47,7 +47,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="ja">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
