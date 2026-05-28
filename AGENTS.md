@@ -30,9 +30,9 @@
 ## コマンド
 
 ```bash
-npm run dev
-npm run build
-npm run lint
-npm run preview:chrome
-npm run preview:stop
+pnpm dev
+pnpm build
+pnpm lint
+pnpm preview:chrome
+pnpm preview:stop
 ```
