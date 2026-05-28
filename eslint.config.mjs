@@ -1,6 +1,10 @@
-import nextVitals from "eslint-config-next/core-web-vitals";
-import nextTypeScript from "eslint-config-next/typescript";
+import js from "@eslint/js";
+import tseslint from "typescript-eslint";
 
-const eslintConfig = [...nextVitals, ...nextTypeScript];
-
-export default eslintConfig;
+export default [
+	{
+		ignores: [".next", "dist", "node_modules"],
+	},
+	js.configs.recommended,
+	...tseslint.configs.recommended,
+];

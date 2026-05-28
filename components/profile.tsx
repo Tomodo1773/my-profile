@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 const links = [
 	{
 		label: "Zenn",
@@ -44,7 +42,7 @@ export default function Profile() {
 							<div className="absolute -inset-2 rounded-full border-[5px] border-[#079aa0] sm:border-[6px]" />
 							<div className="absolute -inset-5 rounded-full border border-cyan-100" />
 							<div className="relative h-40 w-40 overflow-hidden rounded-full bg-white shadow-[0_16px_46px_rgba(8,145,150,0.22)] sm:h-56 sm:w-56">
-								<Image src="/images/profile.png" alt="ともど" width={224} height={224} className="h-full w-full object-cover" priority />
+								<img src="/images/profile.png" alt="ともど" width={224} height={224} className="h-full w-full object-cover" />
 							</div>
 						</div>
 
@@ -67,7 +65,7 @@ export default function Profile() {
 						>
 							<span className="flex items-center">
 								<span className="flex h-10 w-10 items-center justify-center sm:h-20 sm:w-20">
-									<Image src="/images/x.png" alt="" width={72} height={72} className="h-8 w-8 object-contain sm:h-16 sm:w-16" />
+									<img src="/images/x.png" alt="" width={72} height={72} className="h-8 w-8 object-contain sm:h-16 sm:w-16" />
 								</span>
 								<span className="mx-4 h-9 w-px bg-white/30 sm:mx-8 sm:h-20" />
 								<span className="text-2xl font-black leading-none sm:text-5xl">
@@ -90,7 +88,7 @@ export default function Profile() {
 									aria-label={link.label}
 								>
 									<span className="flex h-10 w-10 shrink-0 items-center justify-center sm:h-14 sm:w-14">
-										<Image src={link.icon} alt="" width={48} height={48} className={`${link.iconClassName} object-contain`} />
+										<img src={link.icon} alt="" width={48} height={48} className={`${link.iconClassName} object-contain`} />
 									</span>
 									<span className="mt-3 max-w-full text-center text-[13px] font-black leading-tight text-zinc-950 sm:text-xl">
 										{link.label}

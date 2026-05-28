@@ -22,9 +22,9 @@
 
 ## 実装メモ
 
-- Next.js 製のプロフィールページ
+- Vite 製の静的プロフィールページ
 - 主要な表示は `components/profile.tsx`
-- メタデータは `app/layout.tsx`
+- メタデータは `index.html`
 - UIや見た目に関わる変更をしたら、必ずChrome DevToolsで実際の表示を確認する
 
 ## コマンド
