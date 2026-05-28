@@ -50,8 +50,8 @@ export default function Profile() {
 						<div className="mt-4 h-1.5 w-20 rounded-full bg-[#079aa0]" />
 						<p className="mt-5 text-base font-extrabold leading-relaxed text-[#079aa0] sm:text-xl">AIエージェントデベロッパー / 生成AI活用推進</p>
 						<p className="mt-5 max-w-[31rem] text-base font-medium leading-8 text-zinc-800 sm:text-lg sm:leading-9">
-							AIエージェントデベロッパー。SIerの生成AI活用推進。社内でAOAIのAPI公開とかLT大会とか。Azure, Python,
-							LangGraph。キャラクターbotが好き。アニメ好き。
+							「ないなら作る」が信条。AIキャラbotや投資管理アプリとか個人開発しがち。本業はSIerで生成AI。Python /
+							TypeScript / Azure。アニメ1クール5〜10本見る2児の父。
 						</p>
 					</div>
 
