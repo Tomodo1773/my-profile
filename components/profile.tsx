@@ -24,6 +24,8 @@ const links = [
 	},
 ];
 
+const xProfileUrl = "https://x.com/intent/user?screen_name=Tomodo_ysys";
+
 export default function Profile() {
 	return (
 		<main className="min-h-screen bg-white text-zinc-950">
@@ -57,7 +59,7 @@ export default function Profile() {
 
 					<nav aria-label="プロフィールリンク" className="relative mt-8 space-y-4">
 						<a
-							href="https://x.com/Tomodo_ysys"
+							href={xProfileUrl}
 							target="_blank"
 							rel="noopener noreferrer"
 							className="group flex min-h-[86px] w-full items-center justify-between rounded-xl bg-black px-6 text-white shadow-[0_14px_30px_rgba(0,0,0,0.24)] transition duration-200 hover:-translate-y-0.5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-zinc-950 focus-visible:ring-offset-2 sm:min-h-[108px] sm:px-9"
