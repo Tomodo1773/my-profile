@@ -33,6 +33,4 @@
 pnpm dev
 pnpm build
 pnpm lint
-pnpm preview:chrome
-pnpm preview:stop
 ```
