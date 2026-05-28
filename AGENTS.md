@@ -25,6 +25,7 @@
 - Next.js 製のプロフィールページ
 - 主要な表示は `components/profile.tsx`
 - メタデータは `app/layout.tsx`
+- UIや見た目に関わる変更をしたら、必ずChrome DevToolsで実際の表示を確認する
 
 ## コマンド
 
@@ -32,4 +33,6 @@
 npm run dev
 npm run build
 npm run lint
+npm run preview:chrome
+npm run preview:stop
 ```
