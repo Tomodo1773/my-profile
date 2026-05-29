@@ -25,6 +25,8 @@ updates:
     labels:
       - "dependencies"
       - "npm"
+    ignore:
+      - dependency-name: "@biomejs/biome"
     commit-message:
       prefix: "deps(npm)"
       prefix-development: "deps(npm)"

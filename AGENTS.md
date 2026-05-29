@@ -33,4 +33,6 @@
 pnpm dev
 pnpm build
 pnpm lint
+pnpm format
+pnpm check
 ```
