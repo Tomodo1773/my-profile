@@ -5,6 +5,7 @@
 ## Commands
 
 ```bash
+sfw pnpm install
 pnpm dev
 pnpm build
 pnpm lint
