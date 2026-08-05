@@ -2,3 +2,6 @@ packages:
   - "."
 
 minimumReleaseAge: 10080
+
+overrides:
+  postcss: ^8.5.23

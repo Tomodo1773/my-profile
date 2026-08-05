@@ -1,0 +1,14 @@
+{
+  // Cloudflare Workers (Static Assets) の設定
+  // dist/ をエッジ配信するアセット専用 Worker。サーバー側コード(main)は無し。
+  // https://developers.cloudflare.com/workers/static-assets/
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "my-profile",
+  "compatibility_date": "2026-07-24",
+  "assets": {
+    // vite build の出力先
+    "directory": "./dist",
+    // 未知のパスは index.html を返す(React の単一ページ構成)
+    "not_found_handling": "single-page-application"
+  }
+}
