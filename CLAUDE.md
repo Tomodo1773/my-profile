@@ -32,10 +32,10 @@
 ```bash
 sfw pnpm install
 pnpm dev
-pnpm build
-pnpm lint
-pnpm format
-pnpm check
+sfw pnpm build
+sfw pnpm lint
+sfw pnpm format
+sfw pnpm check
 ```
 
 ## 指示ファイルの同期
