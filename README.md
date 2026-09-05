@@ -22,8 +22,12 @@ pnpm preview
 
 - 本番デプロイとブランチ/PR ごとのプレビュー URL は、Cloudflare ダッシュボードの
   **Git 連携**（Workers &amp; Pages → リポジトリを接続）で自動化する。
-  - ビルドコマンド: `pnpm build`
-  - デプロイコマンド: `npx wrangler deploy`
+  - ビルドコマンド: `pnpm install --frozen-lockfile && pnpm build`
+  - デプロイコマンド: `npx wrangler deploy`（プレビューは `npx wrangler versions upload`）
+  - ビルド変数: `NODE_VERSION=22`、`SKIP_DEPENDENCY_INSTALL=1`。
+    Workers Builds には install コマンドの入力欄が無いため、`SKIP_DEPENDENCY_INSTALL` で
+    自動 install を止め、ビルドコマンド側で lockfile を固定して取得する。
+    **ビルド変数は trigger 単位なので、`main` とプレビューの両方に設定する。**
   - `main` への push で本番デプロイ、その他ブランチ/PR でプレビュー URL を自動生成。
 - ローカルから手動でデプロイする場合は `pnpm deploy`（`wrangler login` 済みが前提）。
 
